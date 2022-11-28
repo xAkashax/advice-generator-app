@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+  --fs: 28px;
+  --ff: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--darkBlue);
+}
+
+main {
+  padding: 1.25rem;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: rgba(19, 19, 34, 0.25) 0px 0.813rem 1.688rem -0.313rem,
+    rgba(0, 0, 0, 0.2) 0px 0.5rem 1.125rem -0.5rem;
+  border-radius: 0.938rem;
+  width: var(--mobileWidth);
+  max-width: 34.375rem;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3.125rem 1.875rem 0 1.875rem;
+  background-color: var(--darkGrayishBlue);
+  text-align: center;
+}
+
+.advice-id {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  word-spacing: 0.313rem;
+  color: var(--neonGreen);
+}
+
+.advice-paragraph {
+  margin: 1.25rem auto 0;
+  width: 100%;
+  font-size: var(--fs);
+  color: var(--lightCyan);
+}
+
+.divider {
+  display: inline-block;
+  margin: 1.25rem 0 1.875rem;
+  width: 100%;
+  height: 1.25rem;
+  background-image: url("images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.dice {
+  margin: 0 auto -1.563rem;
+  border: 0;
+  border-radius: 50%;
+  padding: 0.938rem 1rem 0.75rem;
+  background-color: var(--neonGreen);
+  cursor: pointer;
+}
+
+.dive img {
+  width: 1.438rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.attribution {
+  font-size: 0.625rem;
+  text-align: center;
+  color: var(--darkGrayishBlue);
+}
+
+.attribution a {
+  color: var(--neonGreen);
+}
+
+@media only screen and (min-width: 1020px) {
+  .advice-id {
+    font-size: 0.813rem;
+    letter-spacing: 0.188rem;
+  }
+
+  .divider {
+    background-image: url("images/pattern-divider-desktop.svg");
+  }
+
+  .dice:hover {
+    box-shadow: 0 0 2.5rem var(--neonGreen);
+  }
+}
