@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor.io](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor.io](https://www.frontendmentor.io/solutions/advice-generator-app-0jwtm8A9Z4)
+- Live Site URL: [Live Demo](https://preeminent-cobbler-45b888.netlify.app/)
 
 ## My process
 
